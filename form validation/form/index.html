@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Hareem Saad - B19103019 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f66de91617.js" crossorigin="anonymous"></script>    
+    <title>Hareem Saad - B19103019</title>
+    <style>
+        .sections{
+            margin: 30px;
+            color: aliceblue;
+        }
+        body{
+            background-color: #BED0F4;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        .container {
+            height: auto;
+            background-color: #8BA6E9;
+            border-radius: 10px;
+        }
+        .title {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            color: black;
+            font-weight: bolder;
+            font-size: xx-large;
+            padding: 10px;
+            border-bottom: 5px solid #D7B7BC;
+        }
+        .form-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .input{
+            margin: 5px 0px 5px 0px;
+            background: none;
+            height: 3em;
+            width: 300px;
+            border: none;
+            padding: 1em 1em 0em 1em;
+            outline: none;
+            font-size: 18px
+        }
+        .input::placeholder{
+            background: none;
+            color: aliceblue;
+            font-size: large;
+        }
+        .reg-button {
+            height: 3em;
+            width: 300px;
+            background-color: #6283d8;
+            border-radius: 5px;
+            border: none;
+            color: aliceblue;
+            font-size: large;
+        }
+        .register {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .field {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid aliceblue;
+        }
+        input, select, textarea{
+            color: aliceblue;
+        }
+        .icon {
+            height: inherit;
+            width: 10%;
+            color: white;
+            padding-top: 1em;
+        } 
+        .cb {
+            height: 15px;
+            width: 15px;
+        }
+        .reg-button:hover{
+            background-color: #50658b;
+        }
+        .reg-button:focus{
+            background-color: #7E96C4;
+        }
+        #link {
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #error {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #D7B7BC;
+            font-size: large;
+            
+        }
+    </style>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sections title">Registration</div>
+        <div id="error"></div>
+        <div class="sections form-section">
+            <div class="field"> 
+                <i class="fa-solid fa-user icon"></i>  
+                <input type="text" id="username" class="input" name="name" placeholder="Enter your name ">
+            </div>
+            <div class="field"> 
+                <i class="fa-regular fa-envelope icon"></i>           
+                <input type="email" id="email" class="input" name="email" placeholder="Enter your email">
+            </div>
+            <div class="field">
+                <i class="fa-solid fa-lock icon"></i>
+                <input type="password" id="password" class="input" name="password" placeholder="Create a password">
+            </div>
+            <div class="field">
+                <i class="fa-solid fa-lock icon"></i>
+                <input type="password" id="cnfrm-password" class="input" name="pass-confirm" placeholder="Confirm a password">
+            </div>
+        </div>
+        <div class="sections accept">
+            <input type="checkbox" class="cb" id="cb">
+            <label for="bd">I accept all terms & conditions</label>
+        </div>
+        <div class="sections register">
+            <button id="submit" class="reg-button">Register Now</button>
+            <pre id="link">Already have an account? <a href="./login.html">login now</a></pre>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
